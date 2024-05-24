@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #eceff1;
+}
+
+.content {
+    min-height: calc(100vh - 70px - 64px);
+}
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,
+  minmax(250px, 1fr));
+  gap: 1rem;
+}
+.card-image {
+  border-radius: 15px 15px 0px 0px;
+}
+.card {
+  border-radius: 15px;
+}
+
+.row {
+  background-color: white;
+  padding: 0 0 15px 15px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.137);
+}
+.search-btn {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  border-radius: 5px;
+}
+label:not(:last-child) {
+  margin-right: 1rem;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
